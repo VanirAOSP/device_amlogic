@@ -1,0 +1,83 @@
+# system.prop for M1 reference board
+# This overrides settings in the products/generic/system.prop file
+#
+#rild.libpath=/system/lib/libreference-ril.so
+#rild.libargs=-d /dev/ttyS0
+ro.sf.lcd_density=160
+keyguard.no_require_sim=1
+#set keyguard.enable=false to disable keyguard
+keyguard.enable=true
+ro.statusbar.widget=true
+ro.statusbar.button=true
+ro.statusbar.yearmonthdayweek=true
+
+#wifi.interface=ra0
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
+#wifi.supplicant_scan_interval = 60
+#alsa.mixer.playback.master=DAC2 Analog
+#alsa.mixer.capture.master=Analog
+#configure the Dalvik heap for a standard tablet device.
+#frameworks/base/build/tablet-dalvik-heap.mk
+dalvik.vm.heapstartsize=5m
+dalvik.vm.heapgrowthlimit=48m
+dalvik.vm.heapsize=256m
+
+hwui.render_dirty_regions=false
+
+# Disable un-supported Android feature
+hw.nopm=false
+hw.nobattery=false
+hw.nophone=false
+hw.novibrate=true
+hw.cameras=1
+hw.hasethernet=true
+#hw.hasdata=true
+ro.platform.has.touch=true
+# Wi-Fi sleep policy
+ro.platform.has.sleeppolicy=false
+#set to 0 temporarily so touch works without other changes
+ro.sf.hwrotation=270
+#0~7 You are required to get the correct install direction according the sensor placement on target board
+ro.sf.gsensorposition=4
+ro.sf.ecompassposition=4
+allow_all_orientations=1
+
+# Use OSD2 mouse patch
+ro.ui.cursor=osd2
+
+# Enable 32-bit OSD
+sys.fb.bits=32
+
+# Disable GPS
+gps.enable=false
+
+# Enable player buildin
+media.amsuperplayer.enable=true
+media.amplayer.enable-acodecs=asf,aac,mp3,m4a,ape,flac,alac
+media.amplayer.enable=true
+media.amsuperplayer.m4aplayer=STAGEFRIGHT_PLAYER
+media.amsuperplayer.defplayer=PV_PLAYER
+media.amplayer.thumbnail=true
+
+# Status bar customization
+ro.statusbar.widget.power=true
+ro.statusbar.yearmonthdayweek=true
+
+# HDMI 
+ro.hdmi480p.enable=false
+rw.fb.need2xscale=ok
+media.amplayer.osd2xenable=true
+
+#camera DCIM dir. 0:sd only; 1:nand only; 2,sd first
+ro.camera.dcim=1
+
+# Disable preload-class
+ro.amlogic.no.preloadclass=1 
+
+# App optimization
+ro.app.optimization=true
+
+#Dual display
+ro.vout.dualdisplay2=true

@@ -1,0 +1,118 @@
+# system.prop for M1 reference board
+# This overrides settings in the products/generic/system.prop file
+#
+#rild.libpath=/system/lib/libreference-ril.so
+#rild.libargs=-d /dev/ttyS0
+#ro.sf.lcd_density=240
+keyguard.no_require_sim=1
+#set keyguard.enable=false to disable keyguard
+keyguard.enable=false
+ro.statusbar.widget=false
+ro.statusbar.button=false
+ro.statusbar.yearmonthdayweek=false
+
+#wifi.interface=ra0
+# Time between scans in seconds. Keep it high to minimize battery drain.
+# This only affects the case in which there are remembered access points,
+# but none are in range.
+#wifi.supplicant_scan_interval = 60
+#alsa.mixer.playback.master=DAC2 Analog
+#alsa.mixer.capture.master=Analog
+dalvik.vm.heapsize=128m
+
+# Configure features
+hw.nopm=true
+hw.nobattery=true
+hw.nophone=true
+hw.novibrate=true
+hw.nogps=true
+hw.cameras=0
+hw.hasethernet=true
+hw.has.accelerometer=false
+hw.nomediapartition=true
+
+ro.screen.has.timeout=false
+ro.screen.has.brightness=false
+ro.screen.has.tvout=true
+ro.platform.has.security=false
+ro.platform.has.tts=false
+ro.platform.has.touch=false
+
+# Use OSD2 mouse patch
+ro.ui.cursor=osd2
+ro.ui.cursor.autohide=true
+ro.ui.cursor.timeout=10000
+
+# Enable 32-bit OSD
+sys.fb.bits=32
+
+# Disable GPS
+gps.enable=false
+
+# for sata connect to PC
+vold.gadget_only_sata=1
+
+#Enable player buildin
+media.amsuperplayer.enable=true
+media.amplayer.enable-acodecs=asf,wav,aac
+media.amplayer.enable=true
+media.amplayer.support-exname=divx,h264,avi,ts,m2ts,mkv,mp4,mpg,mpeg,rm,rmvb,wmv,ts,dat,vob,vc1
+media.amplayer.support-exname1=mp2,mp3,ac3
+media.amsuperplayer.m4aplayer=STAGEFRIGHT_PLAYER
+media.amsuperplayer.defplayer=PV_PLAYER
+mbx.3D_Bright.enable=false
+
+# Camera exif
+ro.camera.exif.make=M3
+ro.camera.exif.model=c10ref
+
+######## UBOOTENV VARIBLES - r/w as system properties ##########
+#
+#  Now we can load ubootenv varibles to system properties. 
+#  We use a special prefix ("ubootenv.var" as default) to indicate that the 'property'
+#  actually is an ubootenv varible. 
+#  
+#  A ubootenv 'property' will be initialized during system booting. And when user set
+#  a different value, it will be written back to ubootenv device immediately.
+#
+
+## prefix of ubootenv varibles - should less than 16 chars.
+#UBOOTENV MTD NAME
+ubootenv.var.bootcmd=
+ubootenv.var.cpuclock=
+ubootenv.var.gpuclock=
+ubootenv.var.memsize=
+ubootenv.var.ethaddr=
+ubootenv.var.ipaddr=
+ubootenv.var.gatewayip=
+ubootenv.var.outputmode=
+ubootenv.var.screenratio=
+ubootenv.var.oobeflag=
+ubootenv.var.480poutputx=
+ubootenv.var.480poutputy=
+ubootenv.var.480poutputwidth=
+ubootenv.var.480poutputheight=
+ubootenv.var.480ioutputx=
+ubootenv.var.480ioutputy=
+ubootenv.var.480ioutputwidth=
+ubootenv.var.480ioutputheight=
+ubootenv.var.576poutputx=
+ubootenv.var.576poutputy=
+ubootenv.var.576poutputwidth=
+ubootenv.var.576poutputheight=
+ubootenv.var.576ioutputx=
+ubootenv.var.576ioutputy=
+ubootenv.var.576ioutputwidth=
+ubootenv.var.576ioutputheight=
+ubootenv.var.720poutputx=
+ubootenv.var.720poutputy=
+ubootenv.var.720poutputwidth=
+ubootenv.var.720poutputheight=
+ubootenv.var.1080poutputx=
+ubootenv.var.1080poutputy=
+ubootenv.var.1080poutputwidth=
+ubootenv.var.1080poutputheight=
+ubootenv.var.1080ioutputx=
+ubootenv.var.1080ioutputy=
+ubootenv.var.1080ioutputwidth=
+ubootenv.var.1080ioutputheight=
