@@ -147,43 +147,43 @@ endif
 PRODUCT_PACKAGES += Phone
 # USE_OPENGL_RENDERER := false
 PRODUCT_COPY_FILES += \
-       $(LOCAL_PATH)/init.factorytest.rc:init.factorytest.rc \
-       $(LOCAL_PATH)/initlogo-robot-1280x720.rle:root/initlogo.720p.rle \
-       $(LOCAL_PATH)/initlogo-robot-1920x1080.rle:root/initlogo.1080p.rle \
-       $(LOCAL_PATH)/initlogo-robot-720x480.rle:root/initlogo.480p.rle \
-       $(LOCAL_PATH)/initlogo-robot-720x576.rle:root/initlogo.576p.rle \
-       $(LOCAL_PATH)/set_display_mode.sh:system/bin/set_display_mode.sh \
-       $(LOCAL_PATH)/reset_display_mode.sh:system/bin/reset_display_mode.sh \
-       $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
-       $(LOCAL_PATH)/asound.conf:system/etc/asound.conf \
-       $(LOCAL_PATH)/asound.state:system/etc/asound.state \
-       $(LOCAL_PATH)/audio_effects.conf:system/etc/audio_effects.conf \
-       $(LOCAL_PATH)/remote.conf:system/etc/remote.conf \
-	     $(LOCAL_PATH)/Vendor_0001_Product_0001.kl:/system/usr/keylayout/Vendor_0001_Product_0001.kl \
-	     $(LOCAL_PATH)/alarm_blacklist.txt:/system/etc/alarm_blacklist.txt
+    $(LOCAL_PATH)/init.factorytest.rc:init.factorytest.rc \
+    $(LOCAL_PATH)/initlogo-robot-1280x720.rle:root/initlogo.720p.rle \
+    $(LOCAL_PATH)/initlogo-robot-1920x1080.rle:root/initlogo.1080p.rle \
+    $(LOCAL_PATH)/initlogo-robot-720x480.rle:root/initlogo.480p.rle \
+    $(LOCAL_PATH)/initlogo-robot-720x576.rle:root/initlogo.576p.rle \
+    $(LOCAL_PATH)/set_display_mode.sh:system/bin/set_display_mode.sh \
+	$(LOCAL_PATH)/reset_display_mode.sh:system/bin/reset_display_mode.sh \
+    $(LOCAL_PATH)/media_profiles.xml:system/etc/media_profiles.xml \
+	$(LOCAL_PATH)/asound.conf:system/etc/asound.conf \
+    $(LOCAL_PATH)/asound.state:system/etc/asound.state \
+	$(LOCAL_PATH)/audio_effects.conf:system/etc/audio_effects.conf \
+    $(LOCAL_PATH)/remote.conf:system/etc/remote.conf \
+	$(LOCAL_PATH)/Vendor_0001_Product_0001.kl:/system/usr/keylayout/Vendor_0001_Product_0001.kl \
+	$(LOCAL_PATH)/alarm_blacklist.txt:/system/etc/alarm_blacklist.txt
 
 # Overlay for device specific settings
 DEVICE_PACKAGE_OVERLAYS := device/amlogic/f16ref/overlay
 
 PRODUCT_COPY_FILES += \
-  frameworks/base/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
-	frameworks/base/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
-	frameworks/base/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
-	frameworks/base/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
-	frameworks/base/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
-	frameworks/base/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
-	frameworks/base/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml \
-	frameworks/base/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml \
-	frameworks/base/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-	frameworks/base/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
-	frameworks/base/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+	frameworks/native/data/etc/android.hardware.camera.front.xml:system/etc/permissions/android.hardware.camera.front.xml \
+	frameworks/native/data/etc/android.hardware.camera.autofocus.xml:system/etc/permissions/android.hardware.camera.autofocus.xml \
+	frameworks/native/data/etc/android.hardware.wifi.xml:system/etc/permissions/android.hardware.wifi.xml \
+	frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+	frameworks/native/data/etc/android.hardware.sensor.gyroscope.xml:system/etc/permissions/android.hardware.sensor.gyroscope.xml \
+	frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/permissions/android.hardware.sensor.compass.xml \
+	frameworks/native/data/etc/android.hardware.touchscreen.xml:system/etc/permissions/android.hardware.touchscreen.xml \
+	frameworks/native/data/etc/android.hardware.location.xml:system/etc/permissions/android.hardware.location.xml \
+	frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
+	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
+	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
 	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
 
 # multitouch
 PRODUCT_COPY_FILES += \
   device/amlogic/f16ref/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml \
-	frameworks/base/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
-	frameworks/base/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml
+	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.distinct.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.distinct.xml
 
 # App optimization
 PRODUCT_COPY_FILES += \

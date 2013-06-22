@@ -100,17 +100,30 @@ TARGET_NO_RADIOIMAGE := true
 TARGET_SIMULATOR := false
 TARGET_PROVIDES_INIT_RC := true
 TARGET_PROVIDES_UEVENTD_RC := true
+
+TARGET_GLOBAL_CFLAGS += -mfpu=neon-vfpv4 -mcpu=cortex-a9 -mfloat-abi=softfp
+TARGET_GLOBAL_CPPFLAGS += -mfpu=neon-vfpv4 -mcpu=cortex-a9 -mfloat-abi=softfp
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
+TARGET_CPU_SMP := true
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
+ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_ARCH_VARIANT_CPU := cortex-a9
+TARGET_CPU_VARIANT := cortex-a9
+
+# Kernel
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
+TARGET_KERNEL_CONFIG := mx21_defconfig
 
 # Recovery
-TARGET_USE_AMLOGIC_MKYAFFS_TOOL := true
-TARGET_AMLOGIC_MKYAFFSIMG_TOOL := mkyaffsimage4K.dat
-TARGET_AMLOGIC_KERNEL := $(PRODUCT_OUT)/uImage
-TARGET_AMLOGIC_RECOVERY_KERNEL := $(PRODUCT_OUT)/uImage_recovery
-#TARGET_AMLOGIC_SPI := $(PRODUCT_OUT)/spi.bin
-TARGET_AMLOGIC_BOOTLOADER := $(PRODUCT_OUT)/u-boot-aml-ucl.bin
+# TARGET_USE_AMLOGIC_MKYAFFS_TOOL := true
+# TARGET_AMLOGIC_MKYAFFSIMG_TOOL := mkyaffsimage4K.dat
+# TARGET_AMLOGIC_KERNEL := $(PRODUCT_OUT)/uImage
+# TARGET_AMLOGIC_RECOVERY_KERNEL := $(PRODUCT_OUT)/uImage_recovery
+# #TARGET_AMLOGIC_SPI := $(PRODUCT_OUT)/spi.bin
+# TARGET_AMLOGIC_BOOTLOADER := $(PRODUCT_OUT)/u-boot-aml-ucl.bin
 
 TARGET_AMLOGIC_AML_LOGO := device/amlogic/f16ref/aml_logo.bmp
 
@@ -124,10 +137,8 @@ UBOOTENV_SAVE_IN_NAND := false
 # Use default APK
 BOARD_USE_DEFAULT_APPINSTALL := true
 
-
-
 # Use default keylayout in device/amlogic/common/keylayout
 # instead of sdk/emulator/keymaps
 PRODUCT_PROVIDES_DEFAULT_KEYLAYOUT := true
 
-include device/amlogic/$(TARGET_PRODUCT)/recovery/Recovery.mk
+# include device/amlogic/$(TARGET_PRODUCT)/recovery/Recovery.mk

@@ -19,4 +19,4 @@
 # (like "CRB01").  It must be a single word, and is
 # capitalized by convention.
 
-export BUILD_ID=GB.AMLOGIC.$(shell date +%Y%m%d)
+export BUILD_ID=ICS.AMLOGIC.$(shell date +%Y%m%d)
