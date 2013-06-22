@@ -41,7 +41,7 @@ PRODUCT_LOCALES := en_US \
 
 # Change this to match target country
 # 11 North America; 14 Japan; 13 rest of world
-PRODUCT_DEFAULT_WIFI_CHANNELS := 14
+PRODUCT_DEFAULT_WIFI_CHANNELS := 11
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 	persist.sys.usb.config=mass_storage
