@@ -29,14 +29,6 @@ PRODUCT_MANUFACTURER := MBX
 PRODUCT_DEVICE := f16ref
 PRODUCT_MODEL := MBX reference board (f16ref)
 PRODUCT_LOCALES := en_US \
-	zh_CN \
-	zh_TW \
-	en_GB \
-	en_CA \
-	en_AU \
-	en_NZ \
-	en_SG \
-	ja_JP \
 	mdpi hdpi
 
 # Change this to match target country
