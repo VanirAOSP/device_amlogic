@@ -195,5 +195,5 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/recovery/open_mass_storage.sh:recovery/root/sbin/open_mass_storage.sh
   
 #copy uboot	
-PRODUCT_COPY_FILES += \
-  $(LOCAL_PATH)/u-boot-aml-ucl.bin:u-boot-aml-ucl.bin
+# PRODUCT_COPY_FILES += \
+#  $(LOCAL_PATH)/u-boot-aml-ucl.bin:u-boot-aml-ucl.bin

@@ -20,7 +20,7 @@ LOCAL_PATH := $(call my-dir)
 #include $(BUILD_KEY_CHAR_MAP)
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel/amlogic/mbx12122012
 endif
 
 file := $(INSTALLED_KERNEL_TARGET)
