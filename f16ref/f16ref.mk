@@ -94,9 +94,6 @@ PRODUCT_PACKAGES += 40183/fw_bcm40183b2_p2p.bin
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/BCM40183B2_26M.hcd:system/etc/bluetooth/BCM40183B2_26M.hcd
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/hciattach_amp:system/bin/hciattach_amp
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/bt_addr.sh:system/bin/bt_addr.sh
-
-# Camera
-PRODUCT_PACKAGES += camera.amlogic
 	
 BUILD_DVB_PACKAGES := false
 
@@ -162,6 +159,9 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.location.gps.xml:system/etc/permissions/android.hardware.location.gps.xml \
 	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
 	packages/wallpapers/LivePicker/android.software.live_wallpaper.xml:system/etc/permissions/android.software.live_wallpaper.xml
+
+#Camera
+$(call inherit-product, hardware/ti/omap4xxx/camera/Android.mk)
 
 # multitouch
 PRODUCT_COPY_FILES += \
