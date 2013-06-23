@@ -83,7 +83,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += wpa_supplicant.conf
 PRODUCT_PACKAGES += hostapd_wps
 
-
 # 40181 Wifi driver
 PRODUCT_PACKAGES += wl
 PRODUCT_PACKAGES += dhd
@@ -136,8 +135,10 @@ PRODUCT_PACKAGES += \
 	DVBService \
 	progmanager
 endif
+
 PRODUCT_PACKAGES += Phone
 # USE_OPENGL_RENDERER := false
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init.factorytest.rc:init.factorytest.rc \
     $(LOCAL_PATH)/initlogo-robot-1280x720.rle:root/initlogo.720p.rle \
@@ -187,5 +188,5 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/recovery/open_mass_storage.sh:recovery/root/sbin/open_mass_storage.sh
   
 #copy uboot	
-PRODUCT_COPY_FILES += \
-  $(LOCAL_PATH)/u-boot-aml-ucl.bin:u-boot-aml-ucl.bin
+# PRODUCT_COPY_FILES += \
+#  $(LOCAL_PATH)/u-boot-aml-ucl.bin:u-boot-aml-ucl.bin
