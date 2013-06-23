@@ -19,9 +19,6 @@ LOCAL_PATH := $(call my-dir)
 #LOCAL_MODULE_TAGS := debug
 #include $(BUILD_KEY_CHAR_MAP)
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/kernel
-endif
 
 file := $(INSTALLED_KERNEL_TARGET)
 ALL_PREBUILT += $(file)
