@@ -125,6 +125,7 @@ TARGET_KERNEL_CONFIG := mx21_defconfig
 # #TARGET_AMLOGIC_SPI := $(PRODUCT_OUT)/spi.bin
 # TARGET_AMLOGIC_BOOTLOADER := $(PRODUCT_OUT)/u-boot-aml-ucl.bin
 
+TARGET_USE_AMLOGIC := true
 TARGET_AMLOGIC_AML_LOGO := device/amlogic/f16ref/aml_logo.bmp
 
 # Internal NAND flash /media partition
