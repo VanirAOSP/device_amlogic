@@ -48,12 +48,6 @@ PRODUCT_PACKAGES += \
 	RemoteIME \
 	OOBE \
 	remotecfg \
-	PPPoE \
-	libpppoejni \
-	pppoe_wrapper \
-	pppoe \
-	amlogic.pppoe \
-	amlogic.pppoe.xml \
 	pcli \
 	audio_firmware \
 	remote_control \
