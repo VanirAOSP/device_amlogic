@@ -45,7 +45,6 @@ PRODUCT_PACKAGES += \
 	libsmbbase \
 	libsmbmnt \
 	smbd \
-	Aml2DLauncher_mbx \
 	RemoteIME \
 	OOBE \
 	remotecfg \
