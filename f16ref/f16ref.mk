@@ -41,13 +41,11 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
 	FileBrowser \
 	AppInstaller \
-	VideoPlayer \
 	Samba \
 	libsmbbase \
 	libsmbmnt \
 	smbd \
 	Aml2DLauncher_mbx \
-	Update \
 	RemoteIME \
 	OOBE \
 	remotecfg \

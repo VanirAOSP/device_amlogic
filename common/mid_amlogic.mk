@@ -33,13 +33,10 @@ PRODUCT_PACKAGES := \
     Launcher2 \
     Music \
     MusicFX \
-    Provision \
-    Protips \
     QuickSearchBox \
     Settings \
     Sync \
     SystemUI \
-    Updater \
     CalendarProvider \
     SyncProvider
 

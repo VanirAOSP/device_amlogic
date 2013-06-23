@@ -32,13 +32,10 @@ PRODUCT_PACKAGES := \
     Gallery2 \
     LatinIME \
     Launcher2 \
-    Provision \
-    Protips \
     QuickSearchBox \
     Settings \
     Sync \
     SystemUI \
-    Updater \
     CalendarProvider \
     SyncProvider
 

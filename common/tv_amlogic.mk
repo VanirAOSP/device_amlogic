@@ -29,8 +29,7 @@ PRODUCT_PACKAGES := \
     Music \
     MusicFX \
     Settings \
-    SystemUI \
-    Updater
+    SystemUI
 
 # Live Wallpapers
 PRODUCT_PACKAGES += \
