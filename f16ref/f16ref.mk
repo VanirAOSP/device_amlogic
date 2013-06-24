@@ -54,8 +54,7 @@ PRODUCT_PACKAGES += \
 	amlpictureKit \
 	PicturePlayer \
 	MusicPlayer	\
-	Bluetooth  \
-	Aml3DLauncher
+	Bluetooth
 
 PRODUCT_COPY_FILES += \
 	device/amlogic/f16ref/ump.ko:root/boot/ump.ko \
