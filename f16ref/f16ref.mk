@@ -46,7 +46,6 @@ PRODUCT_PACKAGES += \
 	libsmbmnt \
 	smbd \
 	RemoteIME \
-	OOBE \
 	remotecfg \
 	pcli \
 	audio_firmware \
