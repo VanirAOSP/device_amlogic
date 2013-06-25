@@ -51,7 +51,6 @@ PRODUCT_PACKAGES += \
 	remote_control \
 	amlpictureKit \
 	PicturePlayer \
-	MusicPlayer	\
 	Bluetooth
 
 PRODUCT_COPY_FILES += \
