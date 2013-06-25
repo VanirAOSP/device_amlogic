@@ -173,7 +173,17 @@ PRODUCT_COPY_FILES += \
 #usb burning		
 PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/recovery/open_mass_storage.sh:recovery/root/sbin/open_mass_storage.sh
-  
+
+#Kernel
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
+
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+LOCAL_KERNEL := device/amlogic/f16ref/kernel
+else
+LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
+endif
+
 #copy uboot	
 # PRODUCT_COPY_FILES += \
 #  $(LOCAL_PATH)/u-boot-aml-ucl.bin:u-boot-aml-ucl.bin
