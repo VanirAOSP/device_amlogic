@@ -51,6 +51,7 @@ PRODUCT_PACKAGES += \
 	remote_control \
 	amlpictureKit \
 	PicturePlayer \
+	MusicPlayer \
 	Bluetooth
 
 PRODUCT_COPY_FILES += \
@@ -175,14 +176,13 @@ PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/recovery/open_mass_storage.sh:recovery/root/sbin/open_mass_storage.sh
 
 #Kernel
-PRODUCT_COPY_FILES += \
-	$(LOCAL_KERNEL):kernel
-
 ifeq ($(TARGET_PREBUILT_KERNEL),)
 LOCAL_KERNEL := device/amlogic/f16ref/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
+PRODUCT_COPY_FILES += \
+	$(LOCAL_KERNEL):kernel
 
 #copy uboot	
 # PRODUCT_COPY_FILES += \
