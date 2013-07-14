@@ -113,7 +113,7 @@ TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_CPU_VARIANT := cortex-a9
 
 # Kernel
-# TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
 # TARGET_KERNEL_SOURCE := kernel/amlogic/mbx12122012
 # TARGET_KERNEL_CONFIG := meson_refc03_defconfig
 
@@ -121,9 +121,9 @@ TARGET_CPU_VARIANT := cortex-a9
 TARGET_RECOVERY_FSTAB := device/amlogic/f16ref/recovery/recovery.fstab
 # TARGET_USE_AMLOGIC_MKYAFFS_TOOL := true
 # TARGET_AMLOGIC_MKYAFFSIMG_TOOL := mkyaffsimage4K.dat
-# TARGET_AMLOGIC_KERNEL := $(PRODUCT_OUT)/uImage
-# TARGET_AMLOGIC_RECOVERY_KERNEL := $(PRODUCT_OUT)/uImage_recovery
-# #TARGET_AMLOGIC_SPI := $(PRODUCT_OUT)/spi.bin
+TARGET_AMLOGIC_KERNEL := $(PRODUCT_OUT)/uImage
+TARGET_AMLOGIC_RECOVERY_KERNEL := $(PRODUCT_OUT)/uImage_recovery
+TARGET_AMLOGIC_SPI := $(PRODUCT_OUT)/spi.bin
 # TARGET_AMLOGIC_BOOTLOADER := $(PRODUCT_OUT)/u-boot-aml-ucl.bin
 
 TARGET_USE_AMLOGIC := true
@@ -136,7 +136,6 @@ BOARD_MATCH_LOGO_SIZE := true
 
 #save ubootenv in nand partition
 UBOOTENV_SAVE_IN_NAND := false
-
 # Use default APK
 BOARD_USE_DEFAULT_APPINSTALL := true
 

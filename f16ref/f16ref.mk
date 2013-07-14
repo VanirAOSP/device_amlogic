@@ -174,6 +174,7 @@ PRODUCT_COPY_FILES += \
 #usb burning		
 PRODUCT_COPY_FILES += \
   $(LOCAL_PATH)/recovery/open_mass_storage.sh:recovery/root/sbin/open_mass_storage.sh
+<<<<<<< HEAD
 
 #Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
@@ -184,6 +185,9 @@ endif
 PRODUCT_COPY_FILES += \
 	$(LOCAL_KERNEL):kernel
 
+=======
+  
+>>>>>>> parent of 3d00909... Sham kernel, for the love of god do not try booting with it
 #copy uboot	
 # PRODUCT_COPY_FILES += \
 #  $(LOCAL_PATH)/u-boot-aml-ucl.bin:u-boot-aml-ucl.bin
