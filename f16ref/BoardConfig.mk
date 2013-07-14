@@ -114,8 +114,8 @@ TARGET_CPU_VARIANT := cortex-a9
 
 # Kernel
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.6
-# TARGET_KERNEL_SOURCE := kernel/amlogic/mbx12122012
-# TARGET_KERNEL_CONFIG := meson_refc03_defconfig
+TARGET_KERNEL_SOURCE := kernel/amlogic/mbx12122012
+TARGET_KERNEL_CONFIG := meson_refc03_defconfig
 
 # Recovery
 TARGET_RECOVERY_FSTAB := device/amlogic/f16ref/recovery/recovery.fstab
